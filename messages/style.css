@@ -1,0 +1,306 @@
+html, body, #container {
+	width:100vw;
+	height:100vh;
+}
+
+#container{
+	position: relative;
+	overflow:hidden;
+	background-image: url(fast-black-no-signal.gif);
+	background-repeat: repeat;
+
+}
+/*
+#blue-no-signal {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100vw;
+	height:100%;
+	opacity: 0.8;
+	z-index: 5;
+}*/
+
+#blue-no-signal-2 {
+	position:absolute;
+	top:1%;
+	left:1%;
+	width:15%;
+	height:auto;
+	opacity: 0.8;
+	z-index: 33;
+}
+
+
+
+#blinking-no-signal{
+	position:absolute;
+	top:20%;
+	left:40%;
+	width:15%;
+	height: auto;
+	z-index: 35;
+}
+
+#blinking-no-signal-2{
+	position:absolute;
+	top:72%;
+	left:13%;
+	width:15%;
+	height: auto;
+	z-index: 35;
+}
+
+#blinking-no-signal-3{
+	position:absolute;
+	top:51%;
+	left:65%;
+	width:15%;
+	height: auto;
+	z-index: 35;
+}
+
+#blinking-no-signal-4{
+	position:absolute;
+	top:20%;
+	left:-5%;
+	width:15%;
+	height: auto;
+	z-index: 35;
+}
+
+#colorful-no-signal{
+	position:absolute;
+	left:10%;
+	top:10%;
+	width:60%;
+	opacity:0.75;
+	z-index: 30;
+}
+
+#fast-black-no-signal{
+	position:absolute;
+	top:20%;
+	right:10%;
+	width:60%;
+	height:25%;
+	z-index: 31;
+	opacity: 0.8;
+}
+
+#fast-black-no-signal-2{
+	top:80%;
+	left:14%;
+	position: absolute;
+	width:6%;
+	height:10%;
+	z-index: 40;
+	opacity:0.7;
+}
+
+#fast-no-signal{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:32;
+}
+
+#no-signal-2{
+	position:absolute;
+	bottom:0;
+	right:0;
+	z-index:11;
+	transform:rotate(90deg) translate(25%, 17%);
+	opacity:0.7;
+	width:30%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+#regular-no-signal{
+	position: absolute;
+	z-index: 35;
+	top:45%;
+	left:58%;
+	width:20%;
+	opacity:0.75;
+}
+#traffic-light{
+	z-index:45;
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:7%;
+	opacity:0.8;
+}
+p{
+	font-size: 130%;
+	/*text-decoration: line-through;*/
+	font-family: "VT323", monospace;
+	color:red;
+	background-color: black;
+	position:absolute;
+	top:8%;
+	right:-120%;
+	width:120%;
+	height:auto;
+	z-index:100;
+	padding:1%;
+	overflow-x:hidden;
+	animation: slide-in 60s 0s infinite;
+	white-space: nowrap;
+}
+
+.strikethru {
+	text-decoration: line-through;
+}
+
+.strikethru2 {
+	text-decoration: line-through;
+	
+}
+
+
+/*.strikethru:after {
+	content: "";
+	position:absolute;
+	display:block;
+	width:100%;
+	height:10%;
+	box-shadow: 0 1% black;
+	margin-top:-0.7em;
+	transform-origin:
+	center left;
+	animation: strikethrough 2s 0.5s cubic-bezier(.55,0,.1,1);
+	transition: transform 0.5s cubic-bezier(.55, 0, .1, 1);
+
+}
+
+@keyframes strikethrough {
+	from {
+		transform: scaleX(0);
+	}
+	to {
+		transform: scaleX(1);
+	}
+}*/
+
+@keyframes slide-in {
+	0%{
+	position:absolute;
+	top:8%;
+	right:-120%;
+	}
+/*	25%{
+		position: absolute;
+		top:5%;
+		right:0;
+	}
+	50%{
+		position: absolute;
+		top:5%;
+		left:-90%;
+	}
+	75%{
+		position: absolute;
+		top:5%;
+		left:-150%;
+	}
+*/	100%{
+	transform:translate(-220%);
+	}
+}
+
+#p2{
+	font-size: 115%;
+	font-family: "VT323", monospace;
+	color:red;
+	background-color: black;
+	position:absolute;
+	top:30%;
+	left:-30%;
+	width:26%;
+	height:auto;
+	z-index:100;
+	padding:1%;
+	overflow-x:hidden;
+	animation: second-slide 20s 10s infinite;
+	text-align: middle;
+}
+
+@keyframes second-slide {
+	0%{
+	position:absolute;
+	top:30%;
+	left:-30%;
+	}
+/*	25%{
+		position: absolute;
+		top:5%;
+		right:0;
+	}
+	50%{
+		position: absolute;
+		top:5%;
+		left:-90%;
+	}
+	75%{
+		position: absolute;
+		top:5%;
+		left:-150%;
+	}
+*/	100%{
+	transform:translate(500%);
+	}
+}
+
+
+#p3{
+	font-size: 115%;
+	font-family: "VT323", monospace;
+	color:red;
+	background-color: black;
+	position:absolute;
+	top:50%;
+	right:-40%;
+	width:21%;
+	height:auto;
+	z-index:100;
+	padding:1%;
+	overflow-x:hidden;
+	animation: third-slide 20s 0s infinite;
+	text-align: middle;
+}
+
+@keyframes third-slide {
+	0%{
+	position:absolute;
+	top:50%;
+	right:-40%;
+	}
+/*	25%{
+		position: absolute;
+		top:5%;
+		right:0;
+	}
+	50%{
+		position: absolute;
+		top:5%;
+		left:-90%;
+	}
+	75%{
+		position: absolute;
+		top:5%;
+		left:-150%;
+	}
+*/	100%{
+	transform:translate(-650%);
+	}
+
+
+#rad-alien{
+	position:absolute;
+	bottom:0;
+	right:0;
+	z-index:40;
+	width:30%;
+}
