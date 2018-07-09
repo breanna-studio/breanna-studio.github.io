@@ -146,7 +146,7 @@ p{
 	z-index:100;
 	padding:1%;
 	overflow-x:hidden;
-	animation: slide-in 60s 0s infinite;
+	animation: slide-in 50s 0s infinite;
 	white-space: nowrap;
 }
 
@@ -261,13 +261,13 @@ p{
 	background-color: black;
 	position:absolute;
 	top:50%;
-	right:-40%;
-	width:21%;
+	right:-145%;
+	width:140%;
 	height:auto;
 	z-index:100;
 	padding:1%;
 	overflow-x:hidden;
-	animation: third-slide 20s 0s infinite;
+	animation: third-slide 60s 5s infinite;
 	text-align: middle;
 }
 
@@ -275,7 +275,7 @@ p{
 	0%{
 	position:absolute;
 	top:50%;
-	right:-40%;
+	right:-160%;
 	}
 /*	25%{
 		position: absolute;
@@ -293,7 +293,26 @@ p{
 		left:-150%;
 	}
 */	100%{
-	transform:translate(-650%);
+	transform:translate(-220%);
+	}
+}
+
+
+	#p4{
+		font-size: 115%;
+	font-family: "VT323", monospace;
+	color:red;
+	background-color: black;
+	position:absolute;
+	top:70%;
+	left:-30%;
+	width:20%;
+	height:auto;
+	z-index:100;
+	padding:1%;
+	overflow-x:hidden;
+	animation: second-slide 40s 15s infinite;
+	text-align: middle;
 	}
 
 
