@@ -115,6 +115,7 @@ img{
 
 }
 
+
 .containerTab {
     padding: 20px;
     color: black;
@@ -185,6 +186,7 @@ img{
 	position:absolute;
 	top: 20%;
 	left: 0;
+	color: white;
 
 
 }
@@ -201,6 +203,7 @@ img{
 	position:absolute;
 	top: 20%;
 	right: 0;
+	color: white;
 
 
 }
@@ -243,6 +246,15 @@ img{
 	margin:0 auto;
 	width: 60%;
 
+}
+
+#contactDiv{
+	margin:1% auto;
+	width: 20%;
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 1%;
 }
 
 
