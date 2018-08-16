@@ -2,7 +2,7 @@
 let t = 0; // time variable
 
 function setup() {
-  createCanvas(1900, 1060);
+  createCanvas(windowWidth, windowHeight);
   noStroke();
   fill(255, 255, 255);
 }
