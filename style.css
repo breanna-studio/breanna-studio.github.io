@@ -208,6 +208,38 @@ img{
 
 }
 
+#digital-3{
+	font-size: 300%;
+	text-align: center;
+	background-color: black;
+	border-width: 20%;
+	padding:.5%;
+	width: 49%;
+	margin: 0 auto;
+	position:absolute;
+	top: 40%;
+	left: 0;
+	color: white;
+
+
+}
+
+
+#digital-4{
+	font-size: 300%;
+	text-align: center;
+	background-color: black;
+	border-width: 20%;
+	padding:.5%;
+	width: 49%;
+	margin: 0 auto;
+	position:absolute;
+	top: 40%;
+	right: 0;
+	color: white;
+
+
+}
 
 
 

@@ -1,0 +1,36 @@
+
+let t = 0; // time variable
+
+function setup() {
+  createCanvas(2000, 1060);
+  noStroke();
+  fill(244, 66, 78 );
+}
+
+// XGA = 1024 x 768 pixels.
+// WXGA = 1280 x 800 pixels.
+// HD = 1920 x 1080 pixels
+
+function draw() {
+ 
+  background(83, 66, 244); // translucent background (creates trails)
+
+  // make a x and y grid of ellipses
+  for (let x = 0; x <= width; x = x + 10) {
+    for (let y = 0; y <= height; y = y + 10) {
+      // starting point of each circle depends on mouse position
+      let xAngle = map( 1300, width, -4 * PI, 4 * PI, true);
+      let yAngle = map( 1300, height, -4 * PI, 4 * PI, true);
+      // and also varies based on the particle's location
+      let angle = xAngle * (x / width) + yAngle * (y / height);
+
+      // each particle moves in a circle
+      let myX = x + 60 * cos(7 * PI * t + angle);
+      let myY = y + 60 * sin(7 * PI * t + angle);
+
+      ellipse(myX, myY, 8); // draw particle
+    }
+  }
+
+  t = t + 0.02; // update time
+}
