@@ -4,8 +4,7 @@ let t = 0; // time variable
 function setup() {
   createCanvas(1900, 1060);
   noStroke();
-  fill(15, 155, 15);
-  // fill(2, 18, 242);
+  fill(255, 255, 255);
 }
 
 function draw() {
@@ -22,8 +21,8 @@ function draw() {
       let angle = xAngle * (x / width) + yAngle * (y / height);
 
       // each particle moves in a circle
-      let myX = x + 50 * cos(2 * PI * t + angle);
-      let myY = y + 50 * sin(2 * PI * t + angle);
+      let myX = x + 500 * cos(2 * PI * t + angle);
+      let myY = y + 500 * sin(2 * PI * t + angle);
 
       ellipse(myX, myY, 10); // draw particle
     }
