@@ -1,23 +1,13 @@
 body {
-	margin-top:15%;
 	font-family: "VT323", monotype;
+	position: absolute;
+	background: black;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/moving-grid.gif);
+	background-repeat: repeat;
 	}
 
-	#main-nav{
-	display:inline;
-	font-family: "VT323", monospace;
-	text-decoration:none;
-	text-align:center;
-	width:100%;
-	position: absolute;
-	bottom:30%;
-	height:15%;
-	font-size: 100%;
-	vertical-align: middle;
-	transition: all 0.25s ease;
-	color:white;
-	
-}
 
 #page-name{
 	display:block;
@@ -29,34 +19,45 @@ body {
 	left:0;
 	right:0;
 	top:5%;
-
 	transition: all 0.25s ease;
 	font-size: 250%;
-}
-
-li a: hover{
 	color: white;
 }
 
-nav li {
+
+li {
 	display:inline;
 	font-family: "VT323", monospace;
 	color:white;
 	padding:1%;
 	font-size: 150%;
+	mix-blend-mode: difference;
+	
 	
 }
 
-nav ul{
+li a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+li a:hover {
+	color: black;
+	background-color: white;
+}
+
+ul{
 	width:100%;
+	height: 10%;
 	text-align: center;
 	display: block;
 	list-style-type: none;
 	position: absolute;
-left: 50%;
--webkit-transform: translateX(-50%);
-transform: translateX(-50%);
-bottom: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	bottom: 0;
+	mix-blend-mode: difference;
 
 
 
@@ -68,22 +69,24 @@ nav a {
 
 nav{
 	color:white;
-	background-color:pink;
 	width:100%;
 	position:fixed;
 	top: 0;
 	left: 0;
 	height:15%;
 	z-index:100000;
+	mix-blend-mode: difference;
 }
 
-img{
+#home-portrait{
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
 	width: 60%;
+	margin-top: 10%;
 	
 }
+
 
 
 
@@ -112,6 +115,7 @@ img{
     cursor: pointer;
     color: black;
     margin: 0 auto;
+    margin-top: 10%;
 
 }
 
@@ -170,114 +174,59 @@ img{
 /*DIGITAL------------------------------------------------------------------*/
 
 
-
-.digital a{
+.digital{
 	display: block;
-}
-
-#digital-1{
-	font-size: 300%;
-	text-align: center;
-	background-color: black;
-	border-width: 20%;
-	padding:.5%;
-	width: 49%;
+	height: auto;
 	margin: 0 auto;
-	position:absolute;
-	top: 20%;
-	left: 0;
-	color: white;
-
+	float: center;
+	margin-bottom: 4%;
 
 }
 
+#digital-50{
+	margin-top: 10%;
 
-#digital-2{
-	font-size: 300%;
-	text-align: center;
-	background-color: black;
-	border-width: 20%;
-	padding:.5%;
-	width: 49%;
+}
+
+.dig-img{
+	display: block;
+	padding:0.5%;
+	width: 80%;
+	height: auto;
 	margin: 0 auto;
-	position:absolute;
-	top: 20%;
-	right: 0;
-	color: white;
-
-
-}
-
-#digital-3{
-	font-size: 300%;
-	text-align: center;
-	background-color: black;
-	border-width: 20%;
-	padding:.5%;
-	width: 49%;
-	margin: 0 auto;
-	position:absolute;
-	top: 40%;
-	left: 0;
-	color: white;
-
-
-}
-
-
-#digital-4{
-	font-size: 300%;
-	text-align: center;
-	background-color: black;
-	border-width: 20%;
-	padding:.5%;
-	width: 49%;
-	margin: 0 auto;
-	position:absolute;
-	top: 40%;
-	right: 0;
-	color: white;
-
+	float: center;
+	box-shadow: 5px 5px 50px white;
 
 }
 
 
 
-/*.digital:after {
-    content: "";
-	display: table;  
-    clear: both;
-    object-fit: fill;
 
-
-}*/
-
-.dragMe{
-	cursor: move;
-	background-color: pink;
-	color:black;
-	font-size: 50%;
-	text-align: center;
-	z-index: 100;
-}
 
 
 /*ABOUT PAGE---------------------------------------------------------------*/
 
+
+
+
+#aboutimage{
+	display: block;
+	margin: 0 auto;
+	float: center;
+	width: 50%;
+
+}
+
 #aboutdiv{
-	margin:0 auto;
+	display: block;
+	margin: 0 auto;
+	float: center;
 	width: 70%;
 	background-color: black;
 	color: white;
 	text-align: center;
+	vertical-align: center;
 	padding: 1%;
-}
-
-
-#aboutimage{
-	margin:0 auto;
-	width: 60%;
-
 }
 
 #contactDiv{
@@ -289,6 +238,12 @@ img{
 	padding: 1%;
 }
 
-
+#cv{
+	display: block;
+	margin: 0 auto;
+	margin-top: 10%;
+	float: center;
+	width: 70%;
+}
 
 
