@@ -14,6 +14,10 @@ body{
 	margin-bottom: 2%;
 }
 
+.nav h1{
+	text-align: center;
+}
+
 .wrapper{
 	margin: 2% 5%;
 }
