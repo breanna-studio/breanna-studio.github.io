@@ -1,249 +1,38 @@
-body {
-	font-family: "VT323", monotype;
-	position: absolute;
-	background: black;
+body{
+	padding: 0;
+	background-image: linear-gradient(to bottom, pink, deepskyblue, purple);
+}
+
+.nav{
+	display: flex;
+	background-color: black;
+	color: white;
+	font-family: monospace;
+	font-size: 30px;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2%;
+}
+
+.wrapper{
+	margin: 2% 5%;
+}
+
+.images div{
+	margin-bottom: 2%;
+}
+.images img, iframe{
 	width: 100%;
-	height: 100%;
-	background-image: url(images/moving-grid.gif);
-	background-repeat: repeat;
-	}
-
-
-#page-name{
-	display:block;
-	font-family: "VT323", monospace;
-	text-decoration:none;
-	text-align:center;
-	width:100%;
-	position: absolute;
-	left:0;
-	right:0;
-	top:5%;
-	transition: all 0.25s ease;
-	font-size: 250%;
-	color: white;
 }
 
-
-li {
-	display:inline;
-	font-family: "VT323", monospace;
-	color:white;
-	padding:1%;
-	font-size: 150%;
-	mix-blend-mode: difference;
-	
-	
-}
-
-li a:visited {
-	color: white;
-	text-decoration: none;
-}
-
-li a:hover {
-	color: black;
-	background-color: white;
-}
-
-ul{
-	width:100%;
-	height: 10%;
-	text-align: center;
-	display: block;
-	list-style-type: none;
-	position: absolute;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
-	bottom: 0;
-	mix-blend-mode: difference;
-
-
-
-
-}
-nav a {
-	padding: 2%;
-}
-
-nav{
-	color:white;
-	width:100%;
-	position:fixed;
-	top: 0;
-	left: 0;
-	height:15%;
-	z-index:100000;
-	mix-blend-mode: difference;
-}
-
-#home-portrait{
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	width: 60%;
-	margin-top: 10%;
-	
-}
-
-
-
-
-
-/*PAGE 2-------------------------------------------------------------------------------------*/
-
-
-/* The grid: Three equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 32%;
-    padding: .5%;
-    text-align: center;
-    font-size: 25px;
-    cursor: pointer;
-    color: black;
-    height: 100%;
-  
-}
-
-.single-column{
-	width:100%;
-	 padding: 0;
-    text-align: center;
-    font-size: 25px;
-    cursor: pointer;
-    color: black;
-    margin: 0 auto;
-    margin-top: 10%;
-
-}
-
-
-.containerTab {
-    padding: 20px;
-    color: black;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-	display: table;  
-    clear: both;
-
-}
-
-
-.odd-column{
-	 float: left;
-    width: 49%;
-    padding: .5%;
-    text-align: center;
-    font-size: 25px;
-    cursor: pointer;
-    color: black;
-    height: 100%;
-}
-
-.column-4{
-	 float: left;
-    width: 24%;
-    /*padding: 0;*/
-    text-align: center;
-    font-size: 25px;
-    cursor: pointer;
-    color: black;
-    padding: .25%;
-    height: 100%;
-   }
-/* Closable button inside the image */
-.closebtn {
-    float: right;
-    color: black;
-    font-size: 35px;
-    cursor: pointer;
-}
-
-.subImages{
-	padding: .5%;
-	margin: 0 auto;
-}
-
-
-
-/*DIGITAL------------------------------------------------------------------*/
-
-
-.digital{
-	display: block;
-	height: auto;
-	margin: 0 auto;
-	float: center;
-	margin-bottom: 4%;
-
-}
-
-#digital-50{
-	margin-top: 10%;
-
-}
-
-.dig-img{
-	display: block;
-	padding:0.5%;
-	width: 80%;
-	height: auto;
-	margin: 0 auto;
-	float: center;
-	box-shadow: 5px 5px 50px white;
-
-}
-
-
-
-
-
-
-/*ABOUT PAGE---------------------------------------------------------------*/
-
-
-
-
-#aboutimage{
-	display: block;
-	margin: 0 auto;
-	float: center;
-	width: 50%;
-
-}
-
-#aboutdiv{
-	display: block;
-	margin: 0 auto;
-	float: center;
-	width: 70%;
+.caption{
+	margin-bottom: 0;
+	padding: 0.025%;
 	background-color: black;
+	width: 100%;
+	height: 30%;
 	color: white;
+	font-family: monospace;
 	text-align: center;
-	vertical-align: center;
-	padding: 1%;
+	font-size: 80%;
 }
-
-#contactDiv{
-	margin:1% auto;
-	width: 20%;
-	background-color: black;
-	color: white;
-	text-align: center;
-	padding: 1%;
-}
-
-#cv{
-	display: block;
-	margin: 0 auto;
-	margin-top: 10%;
-	float: center;
-	width: 70%;
-}
-
-
