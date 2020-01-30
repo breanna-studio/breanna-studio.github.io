@@ -25,9 +25,15 @@ body{
 .images div{
 	margin-bottom: 2%;
 }
-.images img, iframe{
+.images img{
 	width: 100%;
 }
+
+.images iframe{
+	width: 100%;
+	margin: 0;
+}
+
 
 .caption{
 	margin-bottom: 0;
