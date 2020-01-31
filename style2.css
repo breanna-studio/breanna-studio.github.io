@@ -1,42 +1,40 @@
 #inmyroom{
 	display: flex;
-	width: 100vw;
-	height: auto;
+	margin: 0 auto;
+	width: auto;
+	height: 100vh;
 }
 
 #retinalhole{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100vw;
+	display: flex;
+	margin: 0 auto;
+	width: auto;
 	height: 100vh;
 }
 
 #raindance{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100vw;
+	display: flex;
+	margin: 0 auto;
+	width: auto;
 	height: 100vh;
 }
 
 #beauty{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100vw;
+	display: flex;
+	margin: 0 auto;
+	width: auto;
 	height: 100vh;
 }
 
 #alternity{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100vw;
+	display: flex;
+	margin: 0 auto;
+	width: auto;
 	height: 100vh;
 }
 #up-late{
 	display: flex;
-	width: 100vw;
-	height: auto;
+	margin: 0 auto;
+	width: auto;
+	height: 100vh;
 }
