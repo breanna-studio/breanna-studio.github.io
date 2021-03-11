@@ -1,5 +1,5 @@
 body{
-	padding: 0;
+/*	padding: 0;*/
 	background-image: linear-gradient(to bottom, pink, deepskyblue, purple);
 }
 
@@ -37,9 +37,9 @@ body{
 
 .caption{
 	margin-bottom: 0;
-	padding: 0.025%;
+	padding: 2%;
 	background-color: black;
-	width: 100%;
+	width: 96%;
 	height: 30%;
 	color: white;
 	font-family: monospace;
