@@ -1,40 +1,261 @@
-#inmyroom{
-	display: flex;
-	margin: 0 auto;
-	width: auto;
-	height: 100vh;
+body{
+	width: 100%;
+	font-family: monospace;
+	line-height: 1.5;
+	background-color: #fff;
+	color: hotpink;
+	padding-top: 25vh;
 }
 
-#retinalhole{
+a{
+	text-decoration: none;
+}
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 10vh;
+	padding: 2%;
+	border-bottom: dashed 5px orange;
 	display: flex;
-	margin: 0 auto;
-	width: auto;
-	height: 100vh;
+	justify-content: space-between;
+	align-items: center;
+	color: hotpink;
+	animation: hueRotate 10s linear infinite;
+	mix-blend-mode: difference;
 }
 
-#raindance{
-	display: flex;
-	margin: 0 auto;
-	width: auto;
-	height: 100vh;
+.selected{
+	border-bottom: solid 4px limegreen;
+	padding-bottom: 4px;
 }
 
-#beauty{
-	display: flex;
-	margin: 0 auto;
-	width: auto;
-	height: 100vh;
+@font-face{
+	font-family: bebasNeue;
+	src: url(Fonts/Bebas_Neue/BebasNeue-Regular.ttf);
 }
 
-#alternity{
+header h1{
+	font-family: bebasNeue;
+	font-size: 6vw;
+
+
+}
+
+
+header nav{
+	font-size: 2vw;
+	/*float: right;*/
+	margin-right: 5%;
+	/*width: 20%;*/
+}
+
+header nav a{
+
+	margin-left: 20px;
+	transition: border 0.3 ease-in-out;
+}
+
+header nav a:hover{
+	border-bottom: dashed 4px hotpink;
+	padding-bottom: 4px;
+
+}
+
+@keyframes hueRotate {
+	0%{
+
+	}
+
+	25%{
+		filter: hue-rotate(90deg);
+
+	}
+
+	50%{
+		filter: hue-rotate(180deg);
+	}
+
+	75%{
+		filter: hue-rotate(270deg);
+	}
+
+	100%{
+		filter: hue-rotate(360deg);
+	}
+}
+
+
+
+.main-section{
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	/*max-width: 1080;*/
+	margin-top: 0;
+	text-align: center;
+	
+}
+
+.main-photo{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	/*max-width: 1080;*/
+	margin-top: 2vh;
+	
+}
+
+.main-photo img{
+	width: 80%;
+	height: auto;
+	border: solid 5px black;
+}
+
+
+
+
+.caption{
+	margin: 2%;
+	background: #fff;
+	color: black;
+	width: 80%;
+}
+
+.caption h2{
+	font-family: bebasNeue;
+	font-size: 3vw;
+	color: hotpink;
+	animation: hueRotate 10s linear infinite;
+	margin-top: 3%;
+
+
+}
+
+
+.caption p{
+
+	font-family: monospace;
+	font-size: 1.2vw;
+	color: black;
+	margin: 0;
+
+}
+
+
+.detail-section{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-around;
+	/*max-width: 1080;*/
+	margin-top: 2vh;
+	
+}
+.detail-photos img{
+	border: solid 5px black;
+	width: 90%;
+	margin: 4%;
+
+}
+
+.about-section{
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: 0;
+	text-align: center;
+	
+}
+
+.about-photo{
+	/*max-width: 1080;*/
+	margin-top: 2vh;
+}
+.about-photo img{
+	border: solid 5px black;
+	width: 40%;
+}
+.artist-statement{
+	margin: 0 auto;
+	width: 50%;
+	border: 5px dashed purple;
+	animation: hueRotate 10s linear infinite;
+	padding: 3%;
+	text-align: justify;
+	color: black;
+	font-size: 1.5vw;
+	
+}
+
+.cv h2 a{
+	font-family: bebasNeue;
+	font-size: 3vw;
+	color: black;
+}
+
+.cv h2 a:hover{
+	color: hotpink;
+}
+
+.steps{
 	display: flex;
 	margin: 0 auto;
-	width: auto;
-	height: 100vh;
+	justify-content: space-between;
+	padding: 2%;
 }
-#up-late{
+
+.steps h2 a{
+	font-family: bebasNeue;
+	font-size: 3vw;
+	color: black;
+}
+
+.steps h2 a:hover{
+	color: limegreen;
+}
+
+footer{
+	width: 100vw;
+	height: 8vh;
+	overflow: hidden;
+	border-top: 5px dashed black;
 	display: flex;
-	margin: 0 auto;
-	width: auto;
-	height: 100vh;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 5vh;
 }
+
+footer p{
+	float: left;
+}
+
+footer nav{
+	float: right;
+}
+
+footer img{
+	width: 200%;
+
+}
+
+footer nav a{
+	width: 16px;
+	margin-left: 5px;
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
