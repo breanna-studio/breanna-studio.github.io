@@ -67,6 +67,7 @@ header nav a:hover{
 	justify-content: center;
 	/*max-width: 1080;*/
 	margin-top: 5vh;
+
 	
 }
 
@@ -74,16 +75,20 @@ header nav a:hover{
 	/*display: inline-block;*/
 	margin: 3%;
 	/*vertical-align: middle;*/
+/*	cursor: url('images/blue-cloud.png'), auto;*/
+
 }
 
 .photo img{
 	width: 500px;
 	border: solid 5px black;
 	transition: mix-blend-mode 0.3s;
+/*	cursor: url('images/blue-cloud.png'), auto;*/
 }
 
 .photo:hover {
 	mix-blend-mode: exclusion;
+/*	cursor: url('images/blue-cloud.png'), auto;*/
 }
 
 footer{
