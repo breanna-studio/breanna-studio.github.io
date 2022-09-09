@@ -115,6 +115,16 @@ filter: brightness(125%);
 
 }
 
+h1{
+	font-family: monospace;
+	font-size: 1.5vw;
+	color: hotpink;
+	animation: hueRotate 10s linear infinite;
+	margin-top: 3%;
+
+
+}
+
 
 .caption p{
 
