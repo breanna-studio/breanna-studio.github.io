@@ -63,6 +63,7 @@ header nav a:hover{
 .photos{
 	display: flex;
 	flex-wrap: wrap;
+	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 	/*max-width: 1080;*/
@@ -80,16 +81,80 @@ header nav a:hover{
 }
 
 .photo img{
-	width: 500px;
+	width: 35vw;
 	border: solid 5px black;
 	transition: mix-blend-mode 0.3s;
 /*	cursor: url('images/blue-cloud.png'), auto;*/
 }
 
-.photo:hover {
-	mix-blend-mode: exclusion;
+.photo img:hover {
+filter: brightness(125%);
 /*	cursor: url('images/blue-cloud.png'), auto;*/
 }
+
+#highlight-photo img{
+		width: 75vw;
+
+}
+
+.caption{
+	margin: 2%;
+	background: #fff;
+	color: black;
+	width: 100%;
+	text-align: center;
+}
+
+.caption h2{
+	font-family: monospace;
+	font-size: 1vw;
+	color: hotpink;
+	animation: hueRotate 10s linear infinite;
+	margin-top: 3%;
+
+
+}
+
+
+.caption p{
+
+	font-family: monospace;
+	font-size: .5vw;
+	color: black;
+	margin: 0;
+
+}
+
+.artist-statement{
+	margin: 2% auto;
+	width: 80%;
+	/*border: 5px dashed purple;*/
+	/*animation: hueRotate 10s linear infinite;*/
+	padding: 3%;
+	text-align: justify;
+	color: black;
+	font-size: 1.5vw;
+	}
+
+	.aftm-statement, .ktc-statement{
+	margin: 2% auto;
+	width: 80%;
+	/*border: 5px dashed purple;*/
+	/*animation: hueRotate 10s linear infinite;*/
+	padding: 3%;
+	text-align: justify;
+	color: black;
+	font-size: 1vw;
+	}
+
+	.steps{
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-between;
+	padding: 2%;
+	font-family: bebasNeue;
+}
+
 
 footer{
 	width: 100vw;
