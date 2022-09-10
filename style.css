@@ -17,7 +17,7 @@ header{
 	width: 100vw;
 	height: 10vh;
 	padding: 2%;
-	border-bottom: dashed 5px orange;
+	border-bottom: dashed 0.4em orange;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -41,33 +41,34 @@ header h1{
 
 header nav{
 	font-size: 2vw;
-	margin-right: 5%;
+	margin-right: 2em;
 }
 
 header nav a{
-	margin-left: 20px;
+	margin-left: 1em;
 	transition: border 0.3 ease-in-out;
 }
 
 header nav a:hover{
-	border-bottom: dashed 4px hotpink;
-	padding-bottom: 4px;
+	border-bottom: dashed 0.18em hotpink;
+	padding-bottom: 0.2em;
 
 }
 
 .selected{
-	border-bottom: solid 4px limegreen;
-	padding-bottom: 4px;
+	border-bottom: solid 0.18em limegreen;
+	padding-bottom: 0.2em;
 }
 
 .photos{
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
+	align-content: center;
 	/*max-width: 1080;*/
-	margin-top: 5vh;
+	margin-top: 4vh;
 
 	
 }
@@ -81,9 +82,9 @@ header nav a:hover{
 }
 
 .photo img{
-	width: 35vw;
-	border: solid 5px black;
-	transition: mix-blend-mode 0.3s;
+	width: 75vw;
+	border: solid .35em black;
+	/*transition: mix-blend-mode 0.3s;*/
 /*	cursor: url('images/blue-cloud.png'), auto;*/
 }
 
@@ -92,26 +93,37 @@ filter: brightness(125%);
 /*	cursor: url('images/blue-cloud.png'), auto;*/
 }
 
-#highlight-photo img{
-		width: 75vw;
 
-}
 
 .caption{
-	margin: 2%;
+/*	margin: 0 auto;*/
+display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
 	background: #fff;
 	color: black;
-	width: 100%;
+	width: 90%;
 	text-align: center;
 }
 
 .caption h2{
 	font-family: monospace;
-	font-size: 1vw;
+	font-size: 1rem;
 	color: hotpink;
 	animation: hueRotate 10s linear infinite;
 	margin-top: 3%;
 
+
+}
+.caption p{
+
+	font-family: monospace;
+	font-size: .5rem;
+	color: black;
+	margin: 0;
 
 }
 
@@ -126,14 +138,7 @@ h1{
 }
 
 
-.caption p{
 
-	font-family: monospace;
-	font-size: .5vw;
-	color: black;
-	margin: 0;
-
-}
 
 .artist-statement{
 	margin: 2% auto;
@@ -148,13 +153,17 @@ h1{
 
 	.aftm-statement, .ktc-statement{
 	margin: 2% auto;
-	width: 80%;
+	width: 80vw;
 	/*border: 5px dashed purple;*/
 	/*animation: hueRotate 10s linear infinite;*/
 	padding: 3%;
 	text-align: justify;
 	color: black;
-	font-size: 1vw;
+	font-size: 1rem;
+	}
+
+	.aftm-statement h1{
+		font-size: 1.2rem
 	}
 
 	.steps{
@@ -170,7 +179,7 @@ footer{
 	width: 100vw;
 	height: 8vh;
 	overflow: hidden;
-	border-top: 5px dashed black;
+	border-top: 0.4em dashed black;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -190,8 +199,8 @@ footer img{
 }
 
 footer nav a{
-	width: 16px;
-	margin-left: 5px;
+	width: 1em;
+	margin-left: 2em;
 	display: inline-block;
 }
 
@@ -233,63 +242,6 @@ footer nav a{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-===================LUELLA=====================
-
-.slideshow{
-	position: relative;
-	width: 100vw;
-	height: 100vh;
-	border: 5px solid black;
-	overflow: hidden;
-	margin-top: 60px;
-}
-
-.holder{
-	position: relative;
-	top: 0;
-	left: -100vw;
-	width: 1000vw;
-	height: 100vh;
-	transition: left 1s;
-	margin-top: 60px;
-
-
-}
-
-.holder div{
-	float: left;
-	width: 80%;
-	height: 70%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 20px;
-
-}
-
-.slide-1{
-	background-image: url(images/Luella.jpg);
-}
 
 
 

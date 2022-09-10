@@ -17,7 +17,7 @@ header{
 	width: 100vw;
 	height: 10vh;
 	padding: 2%;
-	border-bottom: dashed 5px orange;
+	border-bottom: dashed 0.4em orange;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -27,8 +27,8 @@ header{
 }
 
 .selected{
-	border-bottom: solid 4px limegreen;
-	padding-bottom: 4px;
+	border-bottom: solid 0.18em limegreen;
+	padding-bottom: 0.2em;
 }
 
 @font-face{
@@ -47,19 +47,19 @@ header h1{
 header nav{
 	font-size: 2vw;
 	/*float: right;*/
-	margin-right: 5%;
+	margin-right: 2em;
 	/*width: 20%;*/
 }
 
 header nav a{
 
-	margin-left: 20px;
+	margin-left: 1em;
 	transition: border 0.3 ease-in-out;
 }
 
 header nav a:hover{
-	border-bottom: dashed 4px hotpink;
-	padding-bottom: 4px;
+	border-bottom: dashed 0.18em hotpink;
+	padding-bottom: 0.2em;
 
 }
 
@@ -159,7 +159,7 @@ header nav a:hover{
 	
 }
 .detail-photos img{
-	border: solid 5px black;
+	border: solid 0.35em black;
 	width: 90%;
 	margin: 4%;
 
@@ -184,18 +184,18 @@ header nav a:hover{
 	margin-top: 2vh;
 }
 .about-photo img{
-	border: solid 5px black;
+	border: solid 0.35em black;
 	width: 40%;
 }
 .artist-statement{
 	margin: 0 auto;
-	width: 50%;
-	border: 5px dashed purple;
+	width: 60%;
+	border: 0.4em dashed purple;
 	animation: hueRotate 10s linear infinite;
 	padding: 3%;
 	text-align: justify;
 	color: black;
-	font-size: 1.5vw;
+	font-size: 0.8rem;
 	
 }
 
@@ -230,7 +230,7 @@ footer{
 	width: 100vw;
 	height: 8vh;
 	overflow: hidden;
-	border-top: 5px dashed black;
+	border-top: 0.4em dashed black;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -251,8 +251,8 @@ footer img{
 }
 
 footer nav a{
-	width: 16px;
-	margin-left: 5px;
+	width: 1em;
+	margin-left: 2em;
 	display: inline-block;
 }
 
