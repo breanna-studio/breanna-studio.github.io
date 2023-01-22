@@ -34,26 +34,18 @@ header{
 	padding-bottom: 0.2em;
 }
 
-@font-face{
-	font-family: bebasNeue;
-	src: url(Fonts/Bebas_Neue/BebasNeue-Regular.ttf);
-}
 
 header h1{
-	font-family: 'Open Sans', sans-serif;
-	/*font-family: bebasNeue;*/
 	font-size: 4vw;
 	font-weight: 300;
-
 
 }
 
 
 header nav{
 	font-size: 2vw;
-	/*float: right;*/
 	margin-right: 2em;
-	/*width: 20%;*/
+	
 }
 
 header nav a{

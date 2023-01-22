@@ -2,10 +2,13 @@
 
 body{
 	width: 100%;
-	font-family: monospace;
+	font-family: sans-serif;
 	background-color: #fff;
 	color: hotpink;
 	padding-top: 20vh;
+	line-height: 1.5;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
 }
 
 a{
@@ -28,26 +31,21 @@ header{
 	mix-blend-mode: difference;
 }
 
-@font-face{
-	font-family: bebasNeue;
-	src: url(Fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+.selected{
+	border-bottom: solid 0.18em limegreen;
+	padding-bottom: 0.2em;
 }
-
-header h1{
-	font-family: 'Open Sans', monospace;
-	/*font-family: bebasNeue;*/
-	font-size: 4vw;
-	font-weight: 300;
-
-}
-
 
 header nav{
-	font-family: 'Open Sans', monospace;
-	font-weight: 300;
 	font-size: 2vw;
 	margin-right: 2em;
 }
+
+header h1{
+	font-size: 4vw;
+	font-weight: 300;
+}
+
 
 header nav a{
 	margin-left: 1em;
@@ -60,10 +58,7 @@ header nav a:hover{
 
 }
 
-.selected{
-	border-bottom: solid 0.18em limegreen;
-	padding-bottom: 0.2em;
-}
+
 
 .photos{
 	display: flex;
@@ -80,7 +75,7 @@ header nav a:hover{
 	
 }
 
-.current{
+.blog{
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
@@ -95,7 +90,7 @@ header nav a:hover{
 	
 }
 
-.previous{
+/*.previous{
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -110,7 +105,7 @@ header nav a:hover{
 	height: auto;
 	border: solid .35em black;
 	margin: 1em;
-}
+}*/
 
 .photo{
 	/*display: inline-block;*/
@@ -122,14 +117,15 @@ header nav a:hover{
 }
 
 .photo img{
-	width: 75vw;
+	max-width: 65vw;
+	max-height: 50vw;
 	border: solid .35em black;
 	/*transition: mix-blend-mode 0.3s;*/
 /*	cursor: url('images/blue-cloud.png'), auto;*/
 }
 
 .photo img:hover {
-filter: brightness(125%);
+filter: brightness(110%);
 /*	cursor: url('images/blue-cloud.png'), auto;*/
 }
 
