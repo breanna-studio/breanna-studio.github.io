@@ -13,14 +13,16 @@ body{
 a{
 	text-decoration: none;
 }
+
+
 header{
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100vw;
 	height: 10vh;
 	padding: 2%;
-	border-bottom: dashed 0.4em orange;
+	border-bottom: 0.25em dashed blue;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -29,27 +31,19 @@ header{
 	mix-blend-mode: difference;
 }
 
-.selected{
-	border-bottom: solid 0.18em limegreen;
-	padding-bottom: 0.2em;
-}
-
-
-header h1{
-	font-size: 4vw;
-	font-weight: 300;
-
-}
-
 
 header nav{
-	font-size: 2vw;
-	margin-right: 2em;
-	
+	font-size: 1.25em;
+	margin-right: 3em;
 }
 
-header nav a{
+header h1{
+	font-size: 2em;
+	font-weight: 300;
+}
 
+
+header nav a{
 	margin-left: 1em;
 	transition: border 0.3 ease-in-out;
 }
@@ -60,134 +54,68 @@ header nav a:hover{
 
 }
 
-@keyframes hueRotate {
-	0%{
-
-	}
-
-	25%{
-		filter: hue-rotate(90deg);
-
-	}
-
-	50%{
-		filter: hue-rotate(180deg);
-	}
-
-	75%{
-		filter: hue-rotate(270deg);
-	}
-
-	100%{
-		filter: hue-rotate(360deg);
-	}
+.selected{
+	border-bottom: solid 0.18em limegreen;
+	padding-bottom: 0.2em;
 }
 
 
 
-.main-section{
+/*---------------------------------------------*/
+
+.main-img-section-1{
 	display: flex;
-	flex-flow: column wrap;
+	flex-flow: column nowrap;
 	align-items: center;
 	justify-content: center;
-	/*max-width: 1080;*/
-	margin-top: 0;
-	text-align: center;
-
-	
 }
 
-.main-photo{
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-	/*max-width: 1080;*/
-	margin-top: 2vh;
 
-	
-}
 
-.main-photo img{
-	width: 80%;
+.main-img-section-1 img{
+	margin-top: 3%;
+	border: solid 0.15em black;
+	width: 75vw;
 	height: auto;
-	border: solid 5px black;
 }
 
+iframe {
+	width: 85vw;
+	height: 50vw;
+	border: solid .15em black;
 
+}
 
+/*-------------------------------------------------*/
 
 .caption{
-	margin: 2%;
-	background: #fff;
-	color: black;
-	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 2%;
+	width: 100vw;
+	font-size: 1em;
+	font-weight: 150;
 	text-align: center;
+	text-justify: inter-word;
+
 }
+
 
 .caption h2{
-	font-family: bebasNeue;
-	font-size: 3vw;
-	color: hotpink;
-	animation: hueRotate 10s linear infinite;
-	margin-top: 3%;
-
-
+	margin: 0 auto;
+	color: black;
+	width: 75vw;
 }
-
 
 .caption p{
-
-	font-family: monospace;
-	font-size: 1.2vw;
+	margin: 0 auto;
+	width: 75vw;
 	color: black;
-	margin: 0;
 
 }
 
-
-.detail-section{
-	display: flex;
-	flex-flow: row nowrap;
-	align-items: center;
-	justify-content: space-around;
-	/*max-width: 1080;*/
-	margin-top: 2vh;
-	
-}
-.detail-photos img{
-	border: solid 0.35em black;
-	width: 90%;
-	margin: 4%;
-
-}
-
-.detail-photos p{
-	font-size: 0.8vw;
-}
-
-.about-section{
-	display: flex;
-	flex-flow: column wrap;
-	align-items: center;
-	justify-content: center;
-	margin-top: 0;
-	text-align: center;
-	
-}
-
-.about-photo{
-	/*max-width: 1080;*/
-	margin-top: 2vh;
-}
-.about-photo img{
-	border: solid 0.35em black;
-	width: 40%;
-}
 .artist-statement{
 	margin: 0 auto;
 	width: 60%;
-	border: 0.4em dashed purple;
 	animation: hueRotate 10s linear infinite;
 	padding: 3%;
 	text-align: justify;
@@ -195,6 +123,44 @@ header nav a:hover{
 	font-size: 1rem;
 	
 }
+
+.blurb{
+	border: .2em dashed powderblue;
+	padding: 2%;
+}
+
+.workinfo{
+	font-style: italic;
+}
+
+.worktitle{
+	color: deepskyblue;
+	font-style: bold;
+	animation: hueRotate 10s linear infinite;
+
+}
+
+
+/*------------------------------------------------------*/
+
+
+
+.detail-section{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.detail-section img{ 
+	border: solid 0.15em black;
+	width: 40vw;
+	margin: 4%;}
+
+/*-----------------------------------------------------*/
+
+
+
 
 .cv h2 a{
 	font-family: 'Open Sans', sans-serif;
@@ -209,32 +175,21 @@ header nav a:hover{
 	color: hotpink;
 }
 
-.steps{
-	display: flex;
-	margin: 0 auto;
-	justify-content: space-between;
-	padding: 2%;
-}
 
-.steps h2 a{
-	font-family: bebasNeue;
-	font-size: 3vw;
-	color: black;
-}
 
-.steps h2 a:hover{
-	color: limegreen;
-}
+/*--------------------------------------------------*/
 
 footer{
+	position: relative;
+	bottom: 0;
 	width: 100vw;
 	height: 8vh;
 	overflow: hidden;
-	border-top: 0.4em dashed black;
+	border-top: 0.25em dashed black;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	margin-top: 5vh;
+	margin-top: 5%;
 }
 
 footer p{
@@ -258,6 +213,28 @@ footer nav a{
 
 
 
+@keyframes hueRotate {
+	0%{
+
+	}
+
+	25%{
+		filter: hue-rotate(90deg);
+
+	}
+
+	50%{
+		filter: hue-rotate(180deg);
+	}
+
+	75%{
+		filter: hue-rotate(270deg);
+	}
+
+	100%{
+		filter: hue-rotate(360deg);
+	}
+}
 
 
 
