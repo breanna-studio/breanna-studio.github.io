@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position:relative;
+}
+
+.webcam{
+mix-blend-mode: difference; 
+z-index: 500;
+
+
+}
+
+.webcam video{
+  border: 4em dashed lightgoldenrodyellow;
+  mix-blend-mode: screen; 
+  position: fixed;
+  width: 90vw;
+  height: 85vh;
+  object-fit: cover;
+  filter: brightness(300%) blur(5px);
+  animation: hueRotate 90s alternate infinite ease-in-out;
+
+
+}
+
+.border{
+mix-blend-mode: difference; 
+z-index: 550;
+border: 4.5em dashed deepskyblue;
+/*  mix-blend-mode: screen; */
+  position: absolute;
+  width: 92vw;
+  height: 86vh;
+  opacity: 0.5;
+/*  filter: saturate(600%) blur(15px);*/
+  animation: hueRotate 300s alternate infinite ease-in-out;
+
+}
+
+/* #text-background{
+  position: absolute;
+  top: 20%;
+  left: 20%;
+background-color: black;
+  z-index: 1100;
+  width:50%;
+  height: 5%;
+  mix-blend-mode: color-burn;
+  
+} */
+
+.text{
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  position: absolute;
+  color: white;
+  z-index: 1000;
+  mix-blend-mode: color-dodge;
+ /* opacity: 1;*/
+  font-size: 2.5em;
+  text-align: justify;
+  text-justify: inter-word;
+  width: 50%;
+}
+
+.text:nth-of-type(1){
+  
+  top: 20%;
+  left: 10%;
+  width: 80%;
+/*   animation: disappearingText 25s alternate infinite ease-in-out; 
+*/}
+
+
+.text:nth-of-type(2){
+  top: 90%;
+  left: 30%;
+  width: 80%;
+ 
+  /* animation: disappearingText 30s 60s alternate infinite;*/ 
+}
+
+.text:nth-of-type(3){
+  top: 0;
+  right: 10%;
+  width: 80%;
+  text-align: right;
+ 
+/*   animation: disappearingText 90s 10s alternate infinite;*/ 
+}
+
+.text:nth-of-type(4){
+  top: 30%;
+  left: 25%;
+  width: 80%;
+  /*animation: disappearingText 60s 30s alternate infinite ease-in-out; */
+}
+
+.text:nth-of-type(5){
+  top: 70%;
+  left: 0;
+  width: 80%;
+  /*animation: disappearingText 60s 30s alternate infinite ease-in-out; */
+}
+
+.text:nth-of-type(6){
+  bottom: 5%;
+  left: 0;
+  width: 80%;
+  /*animation: disappearingText 60s 30s alternate infinite ease-in-out; */
+}
+
+.text:nth-of-type(7){
+  top: 70%;
+  left: 90%;
+  width: 80%;
+  /*animation: disappearingText 60s 30s alternate infinite ease-in-out; */
+}
+
+
+
+
+@keyframes hueRotate {
+  0%{
+    filter: hue-rotate(0deg) saturate(300%) blur(15px);
+
+  }
+
+  10%{
+    filter: hue-rotate(90deg) saturate(300%) blur(25px);
+
+  }
+
+  20%{
+    filter: hue-rotate(180deg) saturate(300%) blur(30px);
+  }
+
+  30%{
+    filter: hue-rotate(270deg) saturate(300%) blur(16px);
+  }
+
+  40%{
+    filter: hue-rotate(360deg) saturate(300%) blur(27px);
+  }
+
+  50%{
+    filter: hue-rotate(360deg) saturate(300%) blur(50px);
+  }
+
+  60%{
+    filter: hue-rotate(270deg) saturate(300%) blur(100px);
+  }
+
+  70%{
+    filter: hue-rotate(180deg) saturate(300%) blur(30px);
+  }
+
+  80%{
+    filter: hue-rotate(90deg) saturate(300%) blur(38px);
+  }
+
+  90%{
+    filter: hue-rotate(45deg) saturate(300%) blur(75px);
+  }
+
+  100%{
+    filter: hue-rotate(0deg) saturate(300%) blur(40px);
+  }
+}
